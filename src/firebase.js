@@ -1,13 +1,13 @@
 import firebase from "firebase/app";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDk-srdEUj0cQCAG5fTHmC1_UiRVjtCJL0",
-    authDomain: "nomad-twitter.firebaseapp.com",
-    projectId: "nomad-twitter",
-    storageBucket: "nomad-twitter.appspot.com",
-    messagingSenderId: "85849393450",
-    appId: "1:85849393450:web:ca5ac25c3bcdc5a791f653",
-    measurementId: "G-WNTPSE5ZH7"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGIN_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID
   };
 
   export default firebase.initializeApp(firebaseConfig);
