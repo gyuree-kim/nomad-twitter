@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from 'components/App';
 import firebase from "./fbase";
-console.log("hi");
+import "./styles.css";
 
 ReactDOM.render(
   <React.StrictMode>
